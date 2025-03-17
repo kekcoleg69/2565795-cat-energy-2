@@ -6,12 +6,21 @@
   <title>Cat-energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header logo-picture" href="index.html"><img class="main-header logo-picture-image" src="images/logo-picture.svg" alt="Логотип cat-energy" width="33" height="38"></a>
+    <a class="main-header logo-picture" href="index.html">
+      <picture>
+        <source media="(min-width:1200px)" srcset="images/main-logo-dekstop.svg" type="image/svg+xml" width="70" height="59">
+        <source media="(min-width:768px)" srcset="images/main-logo-tablet.svg" type="image/svg+xml" width="60" height="50">
+        <img class="logo-picture-image" src="images/main-logo-mobile.svg" alt="Логотип Cat Energy" width="33" height="38">
+      </picture>
+    </a>
     <a class="main-header logo-text" href="index.html">
       <img src="images/logo-text.svg" alt="CAT-ENERGY текстовый Логотип" width="101" height="18">
     </a>
@@ -40,7 +49,16 @@
       <div class="promo__wrapper">
         <h1 class="promo__header">Функциональное питание для котов</h1>
         <p class="promo__text">Занялся собой? Займись котом!</p>
-        <img class="promo__image" src="images/promo__image.jpg" alt="Картинка с банкой корма" width="280" height="270">
+        <picture>
+          <source media="(min-width:1200px)" srcset="images/promo-logo-image-dekstop@1x.webp 1x, images/promo-logo-image-dekstop@2x.webp 2x" width="552" height="499" type="image/webp">
+          <source media="(min-width:1200px)" srcset="images/promo-logo-image-dekstop@1x.png 1x, images/promo-logo-image-dekstop@2x.png 2x" width="552" height="499" type="image/png">
+
+          <source media="(min-width:768px)" srcset="images/promo-logo-image-tablet@1x.webp 1x, images/promo-logo-image-tablet@2x.webp 2x" width="709" height="609" type="image/webp">
+          <source media="(min-width:768px)" srcset="images/promo-logo-image-tablet@1x.png 1x, images/promo-logo-image-tablet@2x.png 2x" width="709" height="609" type="image/png">
+
+          <source srcset="images/main-promo-image-mobile@1x.webp 1x, images/main-promo-image-mobile@2x.webp 2x" width="280" height="270" type="image/webp">
+          <img class="promo__image" width="280" height="270" src="images/main-promo-image-mobile@1x.png" srcset="images/main-promo-image-mobile@2x.png 2x" alt="Картинка с банкой корма">
+        </picture>
         <button class="button promo__button" type="button">Подобрать программу</button>
       </div>
     </section>
@@ -49,13 +67,11 @@
       <div class="nutrition-programs__wrapper">
         <ul class="nutrition-programs__list">
           <li class="nutrition-programs__item">
-            <img src="images/nutrition-programs__image--weight-loss.svg" alt="Изображение сидячей кошки" width="50" height="53">
             <h3 class="nutrition-programs__title">Похудение</h3>
             <p class="nutrition-programs__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="nutrition-programs__link" href="catalog.html">каталог slim</a>
           </li>
           <li class="nutrition-programs__item">
-            <img src="images/nutrition-programs__image--weight-gain.svg" alt="Изображение сидячей кошки" width="67" height="50">
             <h3 class="nutrition-programs__title">Набор массы</h3>
             <p class="nutrition-programs__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="nutrition-programs__link" href="catalog.html">каталог pro</a>
@@ -68,21 +84,17 @@
         <h2 class="advantages__header">Как это работает</h2>
         <ul class="advantages__list">
           <li class="advantages__item">
-            <img class="advantages__image" src="images/advantages-icon1.svg" alt="иконка" width="60" height="60">
             <p class="advantages__text">Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
           <li class="advantages__item">
-            <img class="advantages__image" src="images/advantages-icon2.svg" alt="иконка" width="60" height="60">
             <p class="advantages__text">Выпускается в виде порошка,
               который нужно лишь залить
               кипятком и готово.</p>
           </li>
           <li class="advantages__item">
-            <img class="advantages__image" src="images/advantages-icon3.svg" alt="иконка" width="60" height="60">
             <p class="advantages__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
           <li class="advantages__item">
-            <img class="advantages__image" src="images/advantages-icon4.svg" alt="иконка" width="60" height="60">
             <p class="advantages__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
           </li>
         </ul>
@@ -108,10 +120,22 @@
         <div class="example__slider">
           <ul class="example__slider-list">
             <li class="example__slider-item">
-              <img class="example__slider-image" src="images/slider-fat-cat.png" alt="Тостый кот до употребления нашего корма" width="280" height="256">
+              <picture>
+                <source media="(min-width:768px)" width="560" height="512" type="image/webp" srcset="images/example-cat-after-tablet@1x.webp 1x ,images/example-cat-after-tablet@2x.webp 2x">
+                <source media="(min-width:768px)" width="560" height="512" type="image/png" srcset="images/example-cat-after-tablet@1x.png 1x ,images/example-cat-after-tablet@2x.png 2x">
+
+                <source width="280" height="256" type="image/webp" srcset="images/example-cat-after-mobile@1x.webp 1x,images/example-cat-after-mobile@2x.webp 2x">
+                <img class=" example__slider-image" src="images/example-cat-after-mobile@1x.png" srcset="images/example-cat-after-mobile@2x.png 2x" alt="Тостый кот до употребления нашего корма" width="280" height="256">
+              </picture>
             </li>
             <li class="example__slider-item">
-              <img class="example__slider-image" src="images/slider-slender-cat.png" alt="Стройный кот после употребления нашего корма" width="280" height="256">
+              <picture>
+                <source media="(min-width:768px)" width="560" height="512" type="image/webp" srcset="images/example-cat-before-tablet@1x.webp 1x ,images/example-cat-before-tablet@2x.webp 2x">
+                <source media="(min-width:768px)" width="560" height="512" type="image/png" srcset="images/example-cat-before-tablet@1x.png 1x ,images/example-cat-before-tablet@2x.png 2x">
+
+                <source width="280" height="256" type="image/webp" srcset="images/example-cat-before-mobile@1x.webp 1x,images/example-cat-before-mobile@2x.webp 2x">
+                <img class=" example__slider-image" src="images/example-cat-before-mobile@1x.png" srcset="images/example-cat-before-mobile@2x.png 2x" alt="Стройный кот после употребления нашего корма" width="280" height="256">
+              </picture>
             </li>
           </ul>
           <div class="example__slider-control">
@@ -132,12 +156,20 @@
           ">приглашаем к сотрудничеству дилеров!</dt>
           <dd class="cooperation__card-adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</dd>
         </dl>
-        <img class="cooperation__image" src="images/cooperation__location.png" alt="Карта с нашим местонахождением" width="320" height="362">
+        <picture>
+          <source media="(min-width:1200px)" srcset="images/location-dekstop@1x.webp@1x.webp 1x,images/location-dekstop@2x.webp 2x" width="1440" height="400" type="image/webp">
+          <source media="(min-width:1200px)" srcset="images/location-dekstop@1x.png@1x.png 1x,images/location-dekstop@2x.png 2x" width="1440" height="400" type="image/png">
+
+          <source media="(min-width:768px)" srcset="images/location-tablet@1x.webp 1x,images/location-tablet@2x.webp 2x" width="768" height="400" type="image/webp">
+          <source media="(min-width:768px)" srcset="images/location-tablet@1x.png 1x,images/location-tablet@2x.png 2x" width="768" height="400" type="image/png">
+
+          <source srcset="images/location-mobile@1x.webp 1x, images/location-mobile@2x.webp 2x" width="320" height="362" type="image/webp">
+          <img class="cooperation__image" src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png 2x" alt="Карта с нашим местонахождением" width="320" height="362">
+        </picture>
       </div>
     </section>
   </main>
   <footer class="main-footer">
-    <img class="main-footer logo-text" src="images/logo-text.svg" alt="логотип cat-energy" width="128" height="24">
     <div class="social-media">
       <ul class="social-media__list">
         <li class="social-media__item social-media__item--vk">
