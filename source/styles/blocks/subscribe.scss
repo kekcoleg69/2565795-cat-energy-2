@@ -1,0 +1,22 @@
+.subscribe {
+  @include oswald-text(24px,24px);
+}
+
+.subscribe__title {
+}
+
+.subscribe__form{
+
+}
+
+.subscribe__text {
+  font-size: 16px;
+}
+
+.subscribe-button {
+  font-size: 20px;
+  line-height: 24px;
+  color: $basic-white;
+  background: $basic-green;
+}
+

@@ -1,0 +1,27 @@
+.nutrition-programs {
+}
+
+.nutrition-programs__wrapper{
+
+}
+
+.nutrition-programs__list{
+
+}
+
+.nutrition-programs__item {
+  background-color: $basic-grey;
+}
+
+.nutrition-programs__title {
+  @include oswald-text(24px, 37px);
+}
+
+.nutrition-programs__text{
+
+}
+
+.nutrition-programs__link {
+  @include oswald-text(16px, 16px);
+}
+
