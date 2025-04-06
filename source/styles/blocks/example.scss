@@ -1,0 +1,60 @@
+// .example{
+
+// }
+
+.example__wrapper {
+  background-color: $basic-grey;
+}
+
+.example__header {
+  @include oswald-text(36px,40px);
+}
+
+// .example__text{
+
+// }
+
+// .example-stats{
+
+// }
+
+// .example-stats__item{
+
+// }
+
+.example-stats__item-value {
+  @include oswald-text(24px,24px);
+}
+
+.example-stats__item-description {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.example__sum {
+  @include oswald-text(14px,20px);
+}
+
+// .example__slider{
+
+// }
+
+// .example__slider-list{
+
+// }
+
+// .example__slider-item{
+
+// }
+
+// .example__slider-control{
+
+// }
+
+// .example__slider-line{
+
+// }
+
+// .example__slider-arrows{
+
+// }

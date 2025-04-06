@@ -1,0 +1,61 @@
+// .product-catalog{
+
+// }
+
+// .product-catalog__wrapper{
+
+// }
+
+.product-catalog__header {
+  @include oswald-text(36px,36px);
+}
+
+.product-catalog__list {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+// .product-catalog__item{
+
+// }
+
+// .product-catalog__product-information{
+
+// }
+
+.product-catalog__title {
+  @include oswald-text(16px,20px, rgba(34,34,34,1));
+}
+
+// .product-catalog__characteristics{
+
+// }
+
+// .product-catalog__weight{
+
+// }
+
+// .product-catalog__weight-value{
+
+// }
+
+// .product-catalog__taste{
+
+// }
+
+// .product-catalog__taste-value{
+
+// }
+
+// .product-catalog__price{
+
+// }
+
+// .product-catalog__price-value{
+
+// }
+
+.product-catalog__button {
+  @include oswald-text(16px,20px, $basic-white);
+  background-color: $basic-green;
+}

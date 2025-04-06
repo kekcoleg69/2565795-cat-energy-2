@@ -1,0 +1,20 @@
+// .cooperation{
+
+// }
+
+// .cooperation__wrapper{
+
+// }
+
+// .cooperation__business-card{
+
+// }
+
+.cooperation__card-invitation {
+  @include oswald-text(16px, 20px, rgba(17,17,17,1));
+  text-transform: uppercase;
+}
+
+.cooperation__card-adress {
+  line-height: 20px;
+}

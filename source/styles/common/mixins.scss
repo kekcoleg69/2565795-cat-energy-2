@@ -1,0 +1,16 @@
+@mixin font-face($font-family, $font-src, $font-weight, $font-style) {
+  @font-face {
+    font-family: $font-family;
+    src: $font-src;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    font-display: swap;
+  }
+}
+
+@mixin oswald-text($font-size, $line-height,$color:rgba(0,0,0,1)) {
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+  font-family: "Oswald", sans-serif;
+}

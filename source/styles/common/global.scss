@@ -1,1 +1,32 @@
-/* здесь используйте глобальные селекторы img, body, html и так далее */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: rgba(68, 68, 68, 1);
+  font-size: 14px;
+  line-height: 18px;
+  background-color: $basic-white;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
