@@ -1,7 +1,21 @@
-// .logo-picture{
+.main-logo {
+  &:hover {
+    opacity: 0.7;
+  }
 
-// }
+  &:active {
+    opacity: 0.3;
+  }
+}
 
-// .logo-text{
+.main-logo__picture {
+  background-image: url("../../icons/main-logo-picture-mobile.svg");
+  width: 33px;
+  height: 38px;
+}
 
-// }
+.main-logo__text {
+  background-image: url("../../icons/main-logo-text-mobile.svg");
+  width: 128px;
+  height: 24px;
+}

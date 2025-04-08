@@ -1,5 +1,7 @@
 .promo {
   @include oswald-text(36px, 36px, rgba(255, 255, 255, 1));
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/promo-cat-bg@1x.png");
+  background-repeat: no-repeat;
 }
 
 // .promo__wrapper{

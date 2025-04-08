@@ -40,8 +40,14 @@
   background-color: $basic-green;
 }
 
-// .additional-products__promotion{
-// }
+.additional-products__promotion {
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/additional-cat-bg@2x.png");
+  background-repeat: no-repeat;
+}
+
+.additional-products__promotion::before {
+  background-image: url("../../icons/icon-gift.svg");
+}
 
 .additional-products__promotion-text {
   font-size: 16px;
