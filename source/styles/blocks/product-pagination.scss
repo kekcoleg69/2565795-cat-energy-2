@@ -1,6 +1,9 @@
 // .product-pagination{
 
 // }
+.product-pagination-wrapper {
+  background-image: url("../../icons/icon-plus.svg");
+}
 
 .product-pagination__title {
   @include oswald-text(16px,20px, rgba(17,17,17,1));

@@ -14,13 +14,40 @@
 }
 
 .nutrition-programs__title {
+  background-image: url("../../icons/icon-cat-slim.svg");
+
   @include oswald-text(24px, 37px);
 }
 
+.nutrition-programs__title--slim {
+  background-image: url("../../icons/icon-cat-slim.svg");
+}
+
+.nutrition-programs__title--pro {
+  background-image: url("../../icons/icon-cat-pro.svg");
+}
 // .nutrition-programs__text{
 
 // }
 
+.nutrition-programs__link-arrow {
+  mask-image: url("../../icons/icon-arrow-short.svg");
+  background-color: rgba(0, 0, 0, 1);
+  display: block;
+  width: 24px;
+  height: 12px;
+}
+
 .nutrition-programs__link {
   @include oswald-text(16px, 16px);
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover .nutrition-programs__link-arrow {
+    mask-image: url("../../icons/icon-arrow-long.svg");
+    background-color: rgba(0, 0, 0, 1);
+    width: 32px;
+  }
 }
