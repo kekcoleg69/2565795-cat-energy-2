@@ -16,10 +16,18 @@
   <header class="main-header">
     <div class="main-header main-logo">
       <a class="main-logo__picture" href="index.html">
-        <span class="visually-hidden">Главный логотип и переход на главную страницу</span>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="images/main-logo-desktop.svg" width="70" height="59" type="image/svg+xml">
+          <source media="(min-width:768px)" srcset="images/main-logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+          <img src="images/main-logo-mobile.svg" width="33" height="38" alt="Главный логотип страницы">
+        </picture>
       </a>
       <a class="main-logo__text" href="index.html">
-        <span class="visually-hidden">Главный логотип и переход на главную страницу</span>
+        <picture>
+          <source media="(min-width:1200px)" srcset="images/logo-text-desktop.svg" width="118" height="21" type="image/svg+xml">
+          <source media="(min-width:768px)" srcset="images/logo-text-tablet.svg" width="101" height="18" type="image/svg+xml">
+          <img src="images/logo-text-mobile.svg" width="101" height="18" alt="Текстовый главный логотип">
+        </picture>
       </a>
     </div>
     <nav class="main-nav">
@@ -40,6 +48,7 @@
         </ul>
       </div>
     </nav>
+
   </header>
   <main class="main-container">
     <h1 class="visually-hidden">Продукция фирмы cat-energy</h1>
@@ -70,8 +79,8 @@
           </li>
           <li class="product-catalog__item">
             <picture>
-              <source media="(min-width:1200px)" srcset="images/chiken-pro-1000-dekstop@1x.webp 1x,images/chiken-pro-1000-dekstop@2x.webp 2x" width="172" height="196" type="image/webp">
-              <source media="(min-width:1200px)" srcset="images/chiken-pro-1000-dekstop@1x.png 1x,images/chiken-pro-1000-dekstop@2x.png 2x" width="172" height="196" type="image/png">
+              <source media="(min-width:1200px)" srcset="images/chiken-pro-1000-desktop@1x.webp 1x,images/chiken-pro-1000-desktop@2x.webp 2x" width="172" height="196" type="image/webp">
+              <source media="(min-width:1200px)" srcset="images/chiken-pro-1000-desktop@1x.png 1x,images/chiken-pro-1000-desktop@2x.png 2x" width="172" height="196" type="image/png">
 
               <source media="(min-width:768px)" srcset="images/chiken-pro-1000-tablet@1x.webp 1x,images/chiken-pro-1000-tablet@2x.webp 2x" width="168" height="206" type="image/webp">
               <source media="(min-width:768px)" srcset="images/chiken-pro-1000-tablet@1x.png 1x,images/chiken-pro-1000-tablet@2x.png 2x" width="168" height="206" type="image/png">
@@ -115,8 +124,8 @@
           </li>
           <li class="product-catalog__item">
             <picture>
-              <source media="(min-width:1200px)" srcset="images/fish-pro-1000-dekstop@1x.webp 1x,images/fish-pro-1000-dekstop@2x.webp 2x" width="172" height="196" type="image/webp">
-              <source media="(min-width:1200px)" srcset="images/fish-pro-1000-dekstop@1x.png 1x,images/fish-pro-1000-dekstop@2x.png 2x" width="172" height="196" type="image/png">
+              <source media="(min-width:1200px)" srcset="images/fish-pro-1000-desktop@1x.webp 1x,images/fish-pro-1000-desktop@2x.webp 2x" width="172" height="196" type="image/webp">
+              <source media="(min-width:1200px)" srcset="images/fish-pro-1000-desktop@1x.png 1x,images/fish-pro-1000-desktop@2x.png 2x" width="172" height="196" type="image/png">
 
               <source media="(min-width:768px)" srcset="images/fish-pro-1000-tablet@1x.webp 1x,images/fish-pro-1000-tablet@2x.webp 2x" width="168" height="200" type="image/webp">
               <source media="(min-width:768px)" srcset="images/fish-pro-1000-tablet@1x.png 1x,images/fish-pro-1000-tablet@2x.png 2x" width="168" height="200" type="image/png">
@@ -160,8 +169,8 @@
           </li>
           <li class="product-catalog__item">
             <picture>
-              <source media="(min-width:1200px)" srcset="images/buckwheat-slim-1000-dekstop@1x.webp 1x,images/buckwheat-slim-1000-dekstop@2x.webp 2x" width="172" height="196" type="image/webp">
-              <source media="(min-width:1200px)" srcset="images/buckwheat-slim-1000-dekstop@1x.png 1x,images/buckwheat-slim-1000-dekstop@2x.png 2x" width="172" height="196" type="image/png">
+              <source media="(min-width:1200px)" srcset="images/buckwheat-slim-1000-desktop@1x.webp 1x,images/buckwheat-slim-1000-desktop@2x.webp 2x" width="172" height="196" type="image/webp">
+              <source media="(min-width:1200px)" srcset="images/buckwheat-slim-1000-desktop@1x.png 1x,images/buckwheat-slim-1000-desktop@2x.png 2x" width="172" height="196" type="image/png">
 
               <source media="(min-width:768px)" srcset="images/fish-pro-1000-tablet@1x.webp 1x,images/fish-pro-1000-tablet@2x.webp 2x" width="168" height="200" type="image/webp">
               <source media="(min-width:768px)" srcset="images/buckwheat-slim-1000-tablet@1x.png 1x,images/buckwheat-slim-1000-tablet@2x.png 2x" width="168" height="200" type="image/png">
@@ -203,14 +212,12 @@
             </div>
             <button class="product-catalog__button button" type="button">заказать</button>
           </li>
-        </ul>
-        <div class="product-catalog product-pagination">
-          <div class="product-pagination-wrapper">
+          <li class="product-catalog__item">
             <h3 class="product-pagination__title">Показать еще 100500 товаров</h3>
             <span class="product-pagination__text">На самом деле вкусов гораздо больше!</span>
             <button class="button button--show-all" type="button">показать все</button>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="additional-products">
@@ -250,9 +257,9 @@
             <button class="additional-products__button button" type="button">заказать</button>
           </li>
         </ul>
-      </div>
-      <div class="additional-products__promotion">
-        <p class="additional-products__promotion-text">Закажите все и получите чехол для кота в подарок!</p>
+        <div class="additional-products__promotion">
+          <p class="additional-products__promotion-text">Закажите все и получите чехол для кота в подарок!</p>
+        </div>
       </div>
     </section>
     <aside class="subscribe">
@@ -272,8 +279,8 @@
           <dd class="cooperation__card-adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</dd>
         </dl>
         <picture>
-          <source media="(min-width:1200px)" srcset="images/location-dekstop@1x.webp 1x,images/location-dekstop@2x.webp 2x" width="1440" height="400" type="image/webp">
-          <source media="(min-width:1200px)" srcset="images/location-dekstop@1x.png 1x,images/location-dekstop@2x.png 2x" width="1440" height="400" type="image/png">
+          <source media="(min-width:1200px)" srcset="images/location-desktop@1x.webp 1x,images/location-desktop@2x.webp 2x" width="1440" height="400" type="image/webp">
+          <source media="(min-width:1200px)" srcset="images/location-desktop@1x.png 1x,images/location-desktop@2x.png 2x" width="1440" height="400" type="image/png">
 
           <source media="(min-width:768px)" srcset="images/location-tablet@1x.webp 1x,images/location-tablet@2x.webp 2x" width="768" height="400" type="image/webp">
           <source media="(min-width:768px)" srcset="images/location-tablet@1x.png 1x,images/location-tablet@2x.png 2x" width="768" height="400" type="image/png">
@@ -287,19 +294,27 @@
   <footer class="main-footer">
     <div class="main-logo">
       <a class="main-logo__text" href="index.html">
-        <span class="visually-hidden">Главный логотип сайта и переход на главную страницу</span>
+        <picture>
+          <img src="images/logo-text-mobile.svg" width="128" height="24" alt="Текстовый главный логотип">
+        </picture>
       </a>
     </div>
     <div class="social-media">
       <ul class="social-media__list">
-        <li class="social-media__item social-media__item--vk">
-          <span class="visually-hidden">ссылка на vkontakte</span>
+        <li class="social-media__item">
+          <a class="social-media__item-link social-media__item-link--vk" href="#">
+            <span class="visually-hidden">ссылка на vkontakte</span>
+          </a>
         </li>
-        <li class="social-media__item social-media__item--youtube">
-          <span class="visually-hidden">ссылка на youtube</span>
+        <li class="social-media__item">
+          <a class="social-media__item-link social-media__item-link--youtube" href="#">
+            <span class="visually-hidden">ссылка на youtube</span>
+          </a>
         </li>
-        <li class="social-media__item social-media__item--telegram">
-          <span class="visually-hidden">ссылка на telegram</span>
+        <li class="social-media__item">
+          <a class="social-media__item-link social-media__item-link--telegram" href="#">
+            <span class="visually-hidden">ссылка на telegram</span>
+          </a>
         </li>
       </ul>
     </div>

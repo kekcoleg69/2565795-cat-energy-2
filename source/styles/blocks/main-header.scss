@@ -1,15 +1,10 @@
-// .main-header{
+.main-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 
-// }
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
-// .main-header__main-nav{
-
-// }
-
-// .logo-picture{
-
-// }
-
-// .logo-text{
-
-// }

@@ -1,8 +1,14 @@
-// .social-media__list{
+.social-media__list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  width: 132px;
+  margin: 0 auto;
+}
 
-// }
-
-.social-media__item {
+.social-media__item-link {
+  width: 28px;
+  height: 22px;
   background-color: rgba(102, 102, 102, 1);
 
   &:hover {
@@ -15,14 +21,14 @@
   }
 }
 
-.social-media__item--vk {
+.social-media__item-link--vk {
   mask-image: url("../../icons/icon-vk.svg");
 }
 
-.social-media__item--youtube {
+.social-media__item-link--youtube {
   mask-image: url("../../icons/icon-youtube.svg");
 }
 
-.social-media__item--telegram {
+.social-media__item-link--telegram {
   mask-image: url("../../icons/icon-telegram.svg");
 }

@@ -5,9 +5,17 @@
   @include oswald-text(36px, 40px);
 }
 
-// .advantages__list{
+.advantages__list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
-// }
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
 
 // .advantages__item{
 
