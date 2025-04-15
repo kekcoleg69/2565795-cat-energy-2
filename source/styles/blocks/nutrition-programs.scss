@@ -5,11 +5,17 @@
 
 // }
 
-// .nutrition-programs__list{
-
-// }
+.nutrition-programs__list {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
 
 .nutrition-programs__item {
+  @media (min-width: $desktop-width) {
+    width: 50%;
+  }
   background-color: $basic-grey;
 }
 

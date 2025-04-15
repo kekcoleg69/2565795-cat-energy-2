@@ -1,4 +1,8 @@
 .logo-html-academy {
+  display: flex;
+  flex-direction: raw;
+  justify-content: space-between;
+
   &:hover .logo-html-academy__image {
     background-color: $basic-green;
   }
@@ -8,10 +12,11 @@
   }
 }
 
-// .logo-html-academy__text{
-
+// .logo-html-academy__text {
 // }
 
-// .logo-html-academy__image {
-
-// }
+.logo-html-academy__image {
+  background-image: url("../../icons/icon-html-academy.svg");
+  width: 27px;
+  height: 34px;
+}

@@ -2,7 +2,6 @@
   @font-face {
     font-family: $font-family;
     src: $font-src;
-    font-weight: $font-weight;
     font-style: $font-style;
     font-display: swap;
   }
@@ -13,4 +12,5 @@
   line-height: $line-height;
   color: $color;
   font-family: "Oswald", sans-serif;
+  font-weight: 400;
 }

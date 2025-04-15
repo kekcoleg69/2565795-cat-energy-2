@@ -5,12 +5,21 @@
 // .subscribe__title {
 // }
 
-// .subscribe__form{
+.subscribe__form {
+  display: flex;
+  flex-wrap: wrap;
 
-// }
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
 
 .subscribe__text {
   font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .subscribe-button {

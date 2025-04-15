@@ -1,18 +1,28 @@
-// .main-nav__toggle{
+.main-nav__toggle {
+  width: 24px;
+  height: 24px;
 
-// }
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
 
 // .main-nav__wrapper{
 
 // }
 
-// .main-nav__list{
+.main-nav__list {
+  width: 100%;
 
-// }
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 33px;
+  }
+}
 
-// .main-nav__item{
-
-// }
+.main-nav__item {
+  z-index: 5;
+}
 
 // .main-nav__item--active{
 
