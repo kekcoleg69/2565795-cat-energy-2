@@ -21,7 +21,13 @@
 }
 
 .main-nav__item {
+  @include oswald-text(18px, 24px,$basic-black);
   z-index: 5;
+  text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    @include oswald-text(20px, 100%,$basic-white);
+  }
 }
 
 // .main-nav__item--active{

@@ -1,28 +1,62 @@
-// .advantages__wrapper {
-// }
+.advantages__wrapper {
+  padding: 20px 20px 49px;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 30px 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 71px 110px 69px;
+  }
+}
 
 .advantages__header {
   @include oswald-text(36px, 40px);
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    @include oswald-text(60px, 60px);
+    margin-bottom: 32px;
+  }
 }
 
 .advantages__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 37px 57px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 37px 80px;
   }
 }
 
-// .advantages__item{
+.advantages__item {
+  width: 100%;
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  background-position: left;
+  min-height: 60px;
 
-// }
+  @media (min-width: $tablet-width) {
+    padding: 40px 0 57px;
+    min-height: none;
+    background-size: 80px 80px;
+    background-position: left top 40px;
+  }
+}
+
 .advantages__item--leaf {
   background-image: url("../../icons/icon-leaf.svg");
 }
+
 
 .advantages__item--liquid {
   background-image: url("../../icons/icon-liquid.svg");
@@ -35,6 +69,14 @@
 .advantages__item--watch {
   background-image: url("../../icons/icon-watch.svg");
 }
-// .advantages__text{
 
-// }
+.advantages__text {
+  margin-left: 80px;
+
+  @media (min-width: $tablet-width) {
+    @include lato-text(16px, 24px);
+    padding-top: 111px;
+    margin-left: 0;
+    max-width: 245px;
+  }
+}

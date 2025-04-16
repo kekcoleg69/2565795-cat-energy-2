@@ -1,6 +1,5 @@
 .main-logo {
   display: flex;
-  gap: 56px;
   align-items: center;
 
   &:hover {
@@ -12,19 +11,22 @@
   }
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
     gap: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 14px;
   }
 }
 
-.main-logo__picture {
-  background-image: url("../../icons/main-logo-picture-mobile.svg");
-  width: 33px;
-  height: 38px;
-}
 
 .main-logo__text {
-  background-image: url("../../icons/main-logo-text-mobile.svg");
-  width: 128px;
-  height: 24px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    transform: none;
+  }
 }

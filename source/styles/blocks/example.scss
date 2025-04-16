@@ -3,45 +3,51 @@
 // }
 
 .example__wrapper {
+  padding: 25px 20px 40px;
   background-color: $basic-grey;
-  position: relative;
-  min-height: 1000px;  //primer
 }
 
 .example__header {
   @include oswald-text(36px,40px);
+  margin-bottom: 40px;
 }
 
-// .example__text{
-
-// }
-.example__stats-wrapper {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: row;
-  }
+.example__text {
+  margin-bottom: 20px;
 }
+
 
 .example-stats {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
 }
 
-// .example-stats__item{
-
-// }
+.example-stats__item {
+  display: flex;
+  flex-direction: column;
+  gap: 7.5px;
+  background-image: url("../../icons/border-example-mobile.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
 
 .example-stats__item-value {
-  @include oswald-text(24px,24px);
+  text-transform: uppercase;
+
+  @include oswald-text(24px, 24px);
 }
 
 .example-stats__item-description {
-  font-size: 12px;
-  line-height: 12px;
+  @include lato-text(12px, 100%);
+  max-width: 77px;
 }
 
 .example__sum {
   @include oswald-text(14px,20px);
+  text-align: center;
 }
 
 .example__slider {
