@@ -5,44 +5,88 @@
 .example__wrapper {
   padding: 25px 20px 40px;
   background-color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 30px 101px;
+  }
 }
 
 .example__header {
   @include oswald-text(36px,40px);
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    @include oswald-text(60px,60px);
+    margin-bottom: 60px;
+  }
 }
 
 .example__text {
-  margin-bottom: 20px;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    @include lato-text(16px,24px);
+    margin-bottom: 70px;
+  }
 }
 
 
 .example-stats {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-between;
   text-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 50%;
+  }
 }
 
 .example-stats__item {
+  position: relative;
   display: flex;
   flex-direction: column;
-  gap: 7.5px;
+  min-width: 124px;
+  min-height: 70px;
+  text-align: center;
   background-image: url("../../icons/border-example-mobile.svg");
-  background-size: contain;
+  background-size: 124px 56px;
   background-repeat: no-repeat;
-  background-position: top left;
+  background-position: top 3px left;
+
+  @media (min-width: $tablet-width) {
+    min-width: 162px;
+    min-height: 77px;
+    background-image: url("../../icons/border-example-tablet.svg");
+    background-size: 162px 72px;
+    background-position: top 2px left;
+  }
 }
 
 .example-stats__item-value {
-  text-transform: uppercase;
-
   @include oswald-text(24px, 24px);
+  margin-top: auto;
+  text-transform: uppercase;
+  margin-bottom: 7.5px;
+
+  @media (min-width: $tablet-width) {
+    @include oswald-text(30px, 37px);
+    margin-bottom: 11px;
+  }
 }
 
 .example-stats__item-description {
   @include lato-text(12px, 100%);
   max-width: 77px;
+  margin: 0 auto;
+  margin-top: auto;
+
+  @media (min-width: $tablet-width) {
+    @include lato-text(14px, 14px);
+    max-width: 125px;
+  }
 }
 
 .example__sum {
