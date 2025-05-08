@@ -1,7 +1,12 @@
 .promo {
-  background: linear-gradient(0deg, rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%), url("../../images/promo-cat-bg@1x.webp");
+  background-image:
+    linear-gradient(0deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    url("../../images/promo-cat-bg@1x.webp"),
+    linear-gradient(rgb(64, 66, 68), rgb(64, 66, 68)); /* фон блока */
   background-repeat: no-repeat;
-  background-size: 100% 302px, 100% 302px;
+  background-size: 100% 302px, auto 302px, 100% 302px;
+  background-position: top, top, top;
+
 
   @media (min-resolution: 2dppx) {
     background: linear-gradient(0deg, rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%), url("../../images/promo-cat-bg@1x.webp");
@@ -10,7 +15,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    background: #ffffff;
+    background: $basic-white;
     padding: 0 30px;
   }
 
@@ -34,40 +39,83 @@
 }
 
 .promo__wrapper {
-  padding: 20px;
+  padding: 27px 20px 0;
+  text-align: center;
   position: relative;
-  min-height: 1000px;  //примерно
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 65px 90px 0;
+    margin-bottom: 526px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 110px 0 0 80px;
+    margin-bottom: 266px;
+  }
 }
 
 
 .promo__header {
-  @include oswald-text(36px, 36px, rgba(255, 255, 255, 1));
+  @include oswald-text(36px, 36px, $basic-white);
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    color: rgba(0, 0, 0, 1);
+    @include oswald-text(60px, 60px, $basic-black);
+    margin-bottom: 40px;
   }
 }
 
 .promo__text {
   @include oswald-text(14px, 14px, rgba(255, 255, 255, 1));
   text-transform: uppercase;
-  top: 1px;
-  left: 1px;
+  margin-bottom: 302px;
 
   @media (min-width: $tablet-width) {
-    color: rgba(0, 0, 0, 1);
+    @media (min-width: $tablet-width) {
+      @include oswald-text(20px, 20px, $basic-black);
+      margin-bottom: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 52px;
+    }
   }
 }
 
 .promo__image {
   position: absolute;
+  top: 170px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+
+  @media (min-width: $tablet-width) {
+    top: 267px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 30px;
+    left: 60%;
+    transform: translateX(-52%);
+  }
 }
 
 .promo__button {
+  @include oswald-text(16px, 20px, $basic-white);
   position: relative;
-  font-size: 16px;
-  line-height: 20px;
   text-transform: uppercase;
   background-color: $basic-green;
-  z-index: 1113;
+  width: 100%;
+  padding: 10px;
+  z-index: 5;
+
+  @media (min-width: $tablet-width) {
+    @include oswald-text(20px, 26px, $basic-white);
+    width: 242px;
+    min-height: 54px;
+  }
 }

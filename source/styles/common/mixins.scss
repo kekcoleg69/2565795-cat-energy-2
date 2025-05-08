@@ -14,3 +14,11 @@
   font-family: "Oswald", sans-serif;
   font-weight: 400;
 }
+
+@mixin lato-text($font-size, $line-height, $color:rgba(68, 68, 68, 1)) {
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}

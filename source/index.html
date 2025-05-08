@@ -12,9 +12,9 @@
   <script src="scripts/index.js" defer></script>
 </head>
 
-<body class="page__body">
+<body class="page__body-index">
   <header class="main-header">
-    <div class="main-header main-logo">
+    <div class="main-logo">
       <a class="main-logo__picture" href="index.html">
         <picture>
           <source media="(min-width: 1200px)" srcset="images/main-logo-dekstop.svg" width="70" height="59" type="image/svg+xml">
@@ -30,10 +30,10 @@
         </picture>
       </a>
     </div>
-    <button class="main-header__toggle" type="button">
-      <span class="visually-hidden">Открыть навигационное меню</span>
-    </button>
-    <nav class="main-nav visually-hidden">
+    <nav class="main-nav ">
+      <button class="button main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть навигационное меню</span>
+      </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active">
@@ -48,12 +48,11 @@
         </ul>
       </div>
     </nav>
-
   </header>
   <main class="main-container">
     <section class="promo">
       <div class="promo__wrapper">
-        <h1 class="promo__header">Функциональное питание для котов</h1>
+        <h1 class="promo__header">Функциональное<br> питание для котов</h1>
         <p class="promo__text">Занялся собой? Займись котом!</p>
         <picture>
           <source media="(min-width:1200px)" srcset="images/promo-image-desktop@1x.webp 1x, images/promo-image-desktop@2x.webp 2x" width="552" height="499" type="image/webp">
@@ -72,15 +71,15 @@
       <h2 class="visually-hidden">Программы питания для вашего питомца</h2>
       <div class="nutrition-programs__wrapper">
         <ul class="nutrition-programs__list">
-          <li class="nutrition-programs__item">
-            <h3 class="nutrition-programs__title nutrition-programs__title--slim">Похудение</h3>
+          <li class="nutrition-programs__item nutrition-programs__item--slim">
+            <h3 class="nutrition-programs__title">Похудение</h3>
             <p class="nutrition-programs__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="nutrition-programs__link" href="catalog.html">каталог slim <span class="nutrition-programs__link-arrow"></span></a>
           </li>
-          <li class="nutrition-programs__item">
-            <h3 class="nutrition-programs__title nutrition-programs__title--pro">Набор массы</h3>
+          <li class="nutrition-programs__item nutrition-programs__item--pro">
+            <h3 class="nutrition-programs__title ">Набор массы</h3>
             <p class="nutrition-programs__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="nutrition-programs__link" href="catalog.html">каталог pro <span class="nutrition-programs__link-arrow"></span></a>
+            <a class="nutrition-programs__link" href="catalog.html">каталог pro</a>
           </li>
         </ul>
       </div>
@@ -110,24 +109,34 @@
       <div class="example__wrapper">
         <h2 class="example__header">Живой пример</h2>
         <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="example__stats-wrapper">
-          <dl class="example-stats">
+        <div class="example-stats">
+          <div class="example-stats-inner">
             <div class="example-stats__item">
-              <dt class="example-stats__item-value">5 кг</dt>
-              <dd class="example-stats__item-description">снижение веса</dd>
+              <p class="example-stats__item-value">5 кг</p>
+              <p class="example-stats__item-description">снижение веса</p>
             </div>
             <div class="example-stats__item">
-              <dt class="example-stats__item-value">60 дней</dt>
-              <dd class="example-stats__item-description">затрачено времени</dd>
+              <p class="example-stats__item-value">60 дней</p>
+              <p class="example-stats__item-description">затрачено времени</p>
             </div>
-          </dl>
-          <p class="example__sum">
-            Затраты на питание: 15 000 РУБ.
-          </p>
+          </div>
+          <div class="example-cost">
+            <p class="example-cost__text">Затраты на питание:</p>
+            <p class="example-cost__sum">15 000 РУБ.</p>
+          </div>
+
         </div>
         <div class="example__slider">
           <ul class="example__slider-list">
             <li class="example__slider-item">
+              <picture>
+                <source media="(min-width:768px)" width="560" height="512" type="image/webp" srcset="images/slider-cats-tablet@1x.webp 1x ,images/slider-cats-tablet@2x.webp 2x">
+                <source media="(min-width:768px)" width="560" height="512" type="image/png" srcset="images/slider-cats-tablet@1x.png 1x ,images/slider-cats-tablet@2x.png 2x">
+                <source width="280" height="256" type="image/webp" srcset="images/slider-cats-mobile@1x.webp 1x,slider-cats-mobile@2x.webp 2x">
+                <img class="example__slider-image" src="images/slider-cats-mobile@1x.png" srcset="images/images/slider-cats-mobile@2x.png 2x" alt="слайдер котов" width="280" height="256">
+              </picture>
+            </li>
+            <li class="example__slider-item visually-hidden">
               <picture>
                 <source media="(min-width:768px)" width="560" height="512" type="image/webp" srcset="images/example-cat-after-tablet@1x.webp 1x ,images/example-cat-after-tablet@2x.webp 2x">
                 <source media="(min-width:768px)" width="560" height="512" type="image/png" srcset="images/example-cat-after-tablet@1x.png 1x ,images/example-cat-after-tablet@2x.png 2x">
@@ -136,7 +145,7 @@
                 <img class=" example__slider-image" src="images/example-cat-after-mobile@1x.png" srcset="images/example-cat-after-mobile@2x.png 2x" alt="Тостый кот до употребления нашего корма" width="280" height="256">
               </picture>
             </li>
-            <li class="example__slider-item">
+            <li class="example__slider-item visually-hidden">
               <picture>
                 <source media="(min-width:768px)" width="560" height="512" type="image/webp" srcset="images/example-cat-before-tablet@1x.webp 1x ,images/example-cat-before-tablet@2x.webp 2x">
                 <source media="(min-width:768px)" width="560" height="512" type="image/png" srcset="images/example-cat-before-tablet@1x.png 1x ,images/example-cat-before-tablet@2x.png 2x">
@@ -161,8 +170,8 @@
       <div class="cooperation__wrapper">
         <dl class="cooperation__business-card">
           <dt class="cooperation__card-invitation
-          ">приглашаем к сотрудничеству дилеров!</dt>
-          <dd class="cooperation__card-adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</dd>
+          ">приглашаем <br>к сотрудничеству <br>дилеров!</dt>
+          <dd class="cooperation__business-card-adress">ул. Большая Конюшенная, д. 19/8 <span class="cooperation__business-card-town">Санкт-Петербург</span></dd>
         </dl>
         <picture>
           <source media="(min-width:1200px)" srcset="images/location-desktop@1x.webp 1x,images/location-desktop@2x.webp 2x" width="1440" height="400" type="image/webp">
@@ -178,8 +187,8 @@
     </section>
   </main>
   <footer class="main-footer">
-    <div class="main-logo">
-      <a class="main-logo__text" href="index.html">
+    <div class="main-logo-footer">
+      <a class="main-logo-footer__text" href="index.html">
         <picture>
           <img src="images/logo-text-mobile.svg" width="128" height="24" alt="Текстовый главный логотип">
         </picture>

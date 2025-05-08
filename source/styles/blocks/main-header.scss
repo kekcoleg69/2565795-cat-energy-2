@@ -4,24 +4,16 @@
   justify-content: space-between;
   padding: 0 20px;
   align-items: center;
-}
-
-// .main-header__main-nav{
-
-// }
-
-.main-header__toggle {
-  width: 24px;
-  height: 24px;
-  background-image: url("../../images/open-modal.svg");
+  position: relative;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
-    display: none;
+    padding: 25px 34px 0 30px;
+    flex-wrap: nowrap;
+    column-gap: 92px;
   }
-}
 
-.main-header__toggle--close {
-  background-image: url("../../images/close-modal.svg");
-  width: 18px;
-  height: 18px;
+  @media (min-width: $desktop-width) {
+    padding: 55px 110px 0;
+  }
 }
