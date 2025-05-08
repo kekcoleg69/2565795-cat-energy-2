@@ -1,4 +1,5 @@
 .button {
+  @include oswald-text(16px, 20px, $basic-white);
   background-color: $basic-green;
   color: $basic-white;
   border: none;

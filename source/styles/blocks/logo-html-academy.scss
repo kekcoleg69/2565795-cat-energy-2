@@ -1,7 +1,9 @@
 .logo-html-academy {
+  width: 100%;
   display: flex;
-  flex-direction: raw;
   justify-content: space-between;
+  align-items: center;
+
 
   &:hover .logo-html-academy__image {
     background-color: $basic-green;
@@ -10,10 +12,16 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet-width) {
+    justify-content: end;
+    gap: 22px;
+  }
 }
 
-// .logo-html-academy__text {
-// }
+.logo-html-academy__text {
+  @include lato-text(16px, 20px);
+}
 
 .logo-html-academy__image {
   background-image: url("../../icons/icon-html-academy.svg");

@@ -5,42 +5,15 @@
   padding: 0 20px;
   align-items: center;
   position: relative;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     padding: 25px 34px 0 30px;
+    flex-wrap: nowrap;
+    column-gap: 92px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 55px 110px 0;
   }
-}
-
-.main-nav {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-}
-
-.main-header__toggle {
-  width: 24px;
-  height: 24px;
-  background-image: url("../../images/open-modal.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: inherit;
-
-  justify-self: end;
-
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.main-header__toggle--close {
-  background-image: url("../../images/close-modal.svg");
-  width: 18px;
-  height: 18px;
 }

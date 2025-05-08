@@ -1,15 +1,28 @@
+.social-media {
+  width: 100%;
+}
+
 .social-media__list {
   display: flex;
   gap: 24px;
   justify-content: center;
-  width: 132px;
+  width: 100%;
   margin: 0 auto;
+  border-bottom: 1px solid rgba(217, 217, 217, 1);
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: none;
+    align-items: center;
+  }
 }
 
 .social-media__item-link {
   width: 28px;
   height: 22px;
   background-color: rgba(102, 102, 102, 1);
+  border: none;
 
   &:hover {
     background-color: $basic-green;

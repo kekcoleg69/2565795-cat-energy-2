@@ -1,9 +1,32 @@
-.subscribe {
-  @include oswald-text(24px,24px);
+.subscribe__wrapper {
+  padding: 21px 20px 42px;
+
+  @include oswald-text(24px, 24px);
+
+  @media (min-width: $tablet-width) {
+    @include oswald-text(32px, 32px);
+    padding: 0 70px 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include oswald-text(40px, 40px);
+    padding: 0 110px 104px;
+  }
 }
 
-// .subscribe__title {
-// }
+.subscribe__title {
+  position: relative;
+
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 73px;
+  }
+}
 
 .subscribe__form {
   display: flex;
@@ -12,19 +35,56 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 752px;
+    margin: 0 auto;
+  }
 }
 
 .subscribe__text {
-  font-size: 16px;
+  @include oswald-text(16px, 24px);
+  margin: 0 auto 24px;
+  text-align: center;
+  max-width: 300px;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    @include oswald-text(24px, 32px);
+    max-width: 100%;
+    margin-bottom: 23px;
+  }
+}
+
+.subscribe-form-input {
+  @include oswald-text(20px, 100%);
+  text-transform: uppercase;
+  width: 100%;
+  padding: 13px;
+  border: 1px solid rgba(205, 205, 205, 1);
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    width: 60%;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 66%;
+    margin: 0;
   }
 }
 
 .subscribe-button {
-  font-size: 20px;
-  line-height: 24px;
-  color: $basic-white;
-  background: $basic-green;
+  @include oswald-text(20px, 24px, $basic-white);
+  text-transform: uppercase;
+  padding: 15px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 40%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 34%;
+  }
 }
