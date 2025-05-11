@@ -9,6 +9,10 @@
     background-color: $basic-green;
   }
 
+  .logo-html-academy__image:focus {
+    background-color: $basic-green;
+  }
+
   &:active {
     opacity: 0.3;
   }
@@ -24,7 +28,8 @@
 }
 
 .logo-html-academy__image {
-  background-image: url("../../icons/icon-html-academy.svg");
+  mask-image: url("../../icons/icon-html-academy.svg");
   width: 27px;
   height: 34px;
+  background-color: rgba(102, 102, 102, 1);
 }

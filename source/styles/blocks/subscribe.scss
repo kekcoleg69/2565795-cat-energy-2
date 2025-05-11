@@ -63,6 +63,20 @@
   border: 1px solid rgba(205, 205, 205, 1);
   margin-bottom: 15px;
 
+  &:hover {
+    outline: 1px solid rgba(205, 205, 205, 1);
+  }
+
+  &:focus {
+    outline: 2px solid rgba(68, 68, 68, 1);
+    border: none;
+  }
+
+  &:disabled {
+    outline: 2px solid rgba(255, 130, 130, 1);
+    border: none;
+  }
+
   @media (min-width: $tablet-width) {
     width: 60%;
     margin: 0;

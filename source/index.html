@@ -13,7 +13,7 @@
 </head>
 
 <body class="page__body-index">
-  <header class="main-header">
+  <header class="main-header" data-test="header">
     <div class="main-logo">
       <a class="main-logo__picture" href="index.html">
         <picture>
@@ -30,7 +30,7 @@
         </picture>
       </a>
     </div>
-    <nav class="main-nav ">
+    <nav class="main-nav">
       <button class="button main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть навигационное меню</span>
       </button>
@@ -50,7 +50,7 @@
     </nav>
   </header>
   <main class="main-container">
-    <section class="promo">
+    <section class="promo" data-test="hero">
       <div class="promo__wrapper">
         <h1 class="promo__header">Функциональное<br> питание для котов</h1>
         <p class="promo__text">Занялся собой? Займись котом!</p>
@@ -67,7 +67,7 @@
         <button class="button promo__button" type="button">Подобрать программу</button>
       </div>
     </section>
-    <section class="nutrition-programs">
+    <section class="nutrition-programs" data-test="programs">
       <h2 class="visually-hidden">Программы питания для вашего питомца</h2>
       <div class="nutrition-programs__wrapper">
         <ul class="nutrition-programs__list">
@@ -84,7 +84,7 @@
         </ul>
       </div>
     </section>
-    <section class="advantages">
+    <section class="advantages" data-test="features">
       <div class="advantages__wrapper">
         <h2 class="advantages__header">Как это работает</h2>
         <ul class="advantages__list">
@@ -105,7 +105,7 @@
         </ul>
       </div>
     </section>
-    <section class="example">
+    <section class="example" data-test="proof">
       <div class="example__wrapper">
         <h2 class="example__header">Живой пример</h2>
         <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
@@ -127,45 +127,45 @@
 
         </div>
         <div class="example__slider">
-          <ul class="example__slider-list">
-            <li class="example__slider-item">
-              <picture>
-                <source media="(min-width:768px)" width="560" height="512" type="image/webp" srcset="images/slider-cats-tablet@1x.webp 1x ,images/slider-cats-tablet@2x.webp 2x">
-                <source media="(min-width:768px)" width="560" height="512" type="image/png" srcset="images/slider-cats-tablet@1x.png 1x ,images/slider-cats-tablet@2x.png 2x">
-                <source width="280" height="256" type="image/webp" srcset="images/slider-cats-mobile@1x.webp 1x,slider-cats-mobile@2x.webp 2x">
-                <img class="example__slider-image" src="images/slider-cats-mobile@1x.png" srcset="images/images/slider-cats-mobile@2x.png 2x" alt="слайдер котов" width="280" height="256">
-              </picture>
-            </li>
-            <li class="example__slider-item visually-hidden">
-              <picture>
-                <source media="(min-width:768px)" width="560" height="512" type="image/webp" srcset="images/example-cat-after-tablet@1x.webp 1x ,images/example-cat-after-tablet@2x.webp 2x">
-                <source media="(min-width:768px)" width="560" height="512" type="image/png" srcset="images/example-cat-after-tablet@1x.png 1x ,images/example-cat-after-tablet@2x.png 2x">
+          <div class="example__slider-item example__slider-item--before">
+            <picture>
+              <source media="(min-width:768px)" width="560" height="512" type="image/webp" srcset="images/example-cat-before-tablet@1x.webp 1x ,images/example-cat-before-tablet@2x.webp 2x">
+              <source media="(min-width:768px)" width="560" height="512" type="image/png" srcset="images/example-cat-before-tablet@1x.png 1x ,images/example-cat-before-tablet@2x.png 2x">
 
-                <source width="280" height="256" type="image/webp" srcset="images/example-cat-after-mobile@1x.webp 1x,images/example-cat-after-mobile@2x.webp 2x">
-                <img class=" example__slider-image" src="images/example-cat-after-mobile@1x.png" srcset="images/example-cat-after-mobile@2x.png 2x" alt="Тостый кот до употребления нашего корма" width="280" height="256">
-              </picture>
-            </li>
-            <li class="example__slider-item visually-hidden">
-              <picture>
-                <source media="(min-width:768px)" width="560" height="512" type="image/webp" srcset="images/example-cat-before-tablet@1x.webp 1x ,images/example-cat-before-tablet@2x.webp 2x">
-                <source media="(min-width:768px)" width="560" height="512" type="image/png" srcset="images/example-cat-before-tablet@1x.png 1x ,images/example-cat-before-tablet@2x.png 2x">
-
-                <source width="280" height="256" type="image/webp" srcset="images/example-cat-before-mobile@1x.webp 1x,images/example-cat-before-mobile@2x.webp 2x">
-                <img class=" example__slider-image" src="images/example-cat-before-mobile@1x.png" srcset="images/example-cat-before-mobile@2x.png 2x" alt="Стройный кот после употребления нашего корма" width="280" height="256">
-              </picture>
-            </li>
-          </ul>
-          <div class="example__slider-control">
-            <span class="example__slider-line"></span>
-            <div class="example__slider-arrows">
-              <span class="arrow arrow-left"></span>
-              <span class="arrow arrow-right"></span>
-            </div>
+              <source width="280" height="256" type="image/webp" srcset="images/example-cat-before-mobile@1x.webp 1x,images/example-cat-before-mobile@2x.webp 2x">
+              <img class=" example__slider-image" src="images/example-cat-before-mobile@1x.png" srcset="images/example-cat-before-mobile@2x.png 2x" alt="Стройный кот после употребления нашего корма" width="280" height="256">
+            </picture>
           </div>
+          <div class="example__slider-item example__slider-item--after">
+            <picture>
+              <source media="(min-width:768px)" width="560" height="512" type="image/webp" srcset="images/example-cat-after-tablet@1x.webp 1x ,images/example-cat-after-tablet@2x.webp 2x">
+              <source media="(min-width:768px)" width="560" height="512" type="image/png" srcset="images/example-cat-after-tablet@1x.png 1x ,images/example-cat-after-tablet@2x.png 2x">
+
+              <source width="280" height="256" type="image/webp" srcset="images/example-cat-after-mobile@1x.webp 1x,images/example-cat-after-mobile@2x.webp 2x">
+              <img class=" example__slider-image" src="images/example-cat-after-mobile@1x.png" srcset="images/example-cat-after-mobile@2x.png 2x" alt="Тостый кот до употребления нашего корма" width="280" height="256">
+            </picture>
+          </div>
+          <button class="example__slider-control" type="button">
+            <span class="visually-hidden">кнопка для работы со слайдером</span>
+            <svg class="example__slider-control-svg example__slider-control-svg--mobile" width="40" height="256" viewBox="0 0 40 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect class="bg-green" x="18" width="4" height="256" rx="2" fill="#666666" />
+              <rect x="1" y="109" width="38" height="38" rx="19" fill="white" />
+              <rect class="bg-green-stroke" x=" 1" y="109" width="38" height="38" rx="19" stroke="#666666" stroke-width="2" />
+              <path class="bg-green" d="M16 119L8 128L16 137V119Z" fill="#666666" />
+              <path class="bg-green" d="M32 128L24 119V137L32 128Z" fill="#666666" />
+            </svg>
+            <svg class="example__slider-control-svg example__slider-control-svg--tablet" width="40" height="512" viewBox="0 0 40 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect class="bg-green" x="18" width="4" height="512" rx="2" fill="#666666" />
+              <rect x="1" y="237" width="38" height="38" rx="19" fill="white" />
+              <rect class="bg-green-stroke" x="1" y="237" width="38" height="38" rx="19" stroke="#666666" stroke-width="2" />
+              <path class="bg-green" d="M16 247L8 256L16 265V247Z" fill="#666666" />
+              <path class="bg-green" d="M32 256L24 247V265L32 256Z" fill="#666666" />
+            </svg>
+          </button>
         </div>
       </div>
     </section>
-    <section class="cooperation">
+    <section class="cooperation" data-test="contacts">
       <h2 class="cooperation__header visually-hidden">Сотрудничество с cat-energy</h2>
       <div class="cooperation__wrapper">
         <dl class="cooperation__business-card">
@@ -173,20 +173,11 @@
           ">приглашаем <br>к сотрудничеству <br>дилеров!</dt>
           <dd class="cooperation__business-card-adress">ул. Большая Конюшенная, д. 19/8 <span class="cooperation__business-card-town">Санкт-Петербург</span></dd>
         </dl>
-        <picture>
-          <source media="(min-width:1200px)" srcset="images/location-desktop@1x.webp 1x,images/location-desktop@2x.webp 2x" width="1440" height="400" type="image/webp">
-          <source media="(min-width:1200px)" srcset="images/location-desktop@1x.png 1x,images/location-desktop@2x.png 2x" width="1440" height="400" type="image/png">
-
-          <source media="(min-width:768px)" srcset="images/location-tablet@1x.webp 1x,images/location-tablet@2x.webp 2x" width="768" height="400" type="image/webp">
-          <source media="(min-width:768px)" srcset="images/location-tablet@1x.png 1x,images/location-tablet@2x.png 2x" width="768" height="400" type="image/png">
-
-          <source srcset="images/location-mobile@1x.webp 1x, images/location-mobile@2x.webp 2x" width="320" height="362" type="image/webp">
-          <img class="cooperation__image" src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png 2x" alt="Карта с нашим местонахождением" width="320" height="362">
-        </picture>
+        <iframe class="cooperation__image" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1996.7929883483553!2d30.3172265!3d59.9687573!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1746950488483!5m2!1sru!2sru" title="Карта с местонахождением html-academy" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer" data-test="footer">
     <div class="main-logo-footer">
       <a class="main-logo-footer__text" href="index.html">
         <picture>

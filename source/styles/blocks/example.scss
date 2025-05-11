@@ -1,18 +1,18 @@
 
 .example__wrapper {
-  position: relative;
   min-height: 659px;
-  padding: 23px  20px 40px;
-  background-color: $basic-white;
+  position: relative;
+  padding: 23px 20px 0;
+  background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
-    padding: 47px 30px 101px;
-    min-height: 1081px;
+    min-height: unset;
+    padding: 47px 30px 196px;
+    background-color: $basic-white;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 110px 75px;
-    min-height: 598px;
   }
 }
 
@@ -176,42 +176,87 @@
 }
 
 .example__slider {
-  z-index: 2;
-  position: absolute;
+  position: relative;
+  z-index: 4;
+  display: inline-block;
   width: 100%;
   max-width: 280px;
-  bottom: 42px;
+  bottom: -19px;
   left: 50%;
   transform: translateX(-50%);
+  overflow: hidden;
+  min-height: 256px;
+
 
   @media (min-width: $tablet-width) {
     max-width: 560px;
-    bottom: 100px;
+    bottom: -99px;
+    min-height: 512px;
   }
 
   @media (min-width: $desktop-width) {
+    position: absolute;
     left: 73%;
-    bottom: 86px;
+    top: 2px;
   }
 }
 
+.example__slider-item--before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  overflow: hidden;
+  z-index: 2;
+}
 
-// .example__slider-list{
+.example__slider-item--after {
+  z-index: 2;
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  clip-path: inset(0 0 0 50%);
+}
 
-// }
+.example__slider-control {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  z-index: 6;
+  background-color: inherit;
+  border: none;
+}
 
-// .example__slider-item{
+.example__slider-control-svg:hover .bg-green {
+  fill: $basic-green;
+}
 
-// }
+.example__slider-control-svg:hover .bg-green-stroke {
+  stroke: $basic-green;
+}
 
-// .example__slider-control{
+.example__slider-control-svg:active .bg-green {
+  fill: rgba(94, 170, 47, 1);
+}
 
-// }
+.example__slider-control-svg:active .bg-green-stroke {
+  stroke: rgba(94, 170, 47, 0.6);
+}
 
-// .example__slider-line{
+.example__slider-control-svg--mobile {
+  display: block;
 
-// }
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
 
-// .example__slider-arrows{
+.example__slider-control-svg--tablet {
+  display: none;
 
-// }
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}

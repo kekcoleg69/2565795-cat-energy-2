@@ -5,24 +5,16 @@
 .cooperation__wrapper {
   width: 100%;
   position: relative;
-  background-color: $basic-grey;
+  background-color: $basic-white;
+
 
   @media (min-width: $tablet-width) {
     background-color: $basic-white;
   }
 }
 
-.cooperation__wrapper::before {
-  @media (max-width: 767px) {
-    z-index: 1;
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 110px;
-    left: 0;
-    top: 0;
-    background-color: $basic-white;
-  }
+.page__body-catalog .cooperation__wrapper {
+  background-color: $basic-grey;
 }
 
 .cooperation__business-card {
@@ -60,7 +52,7 @@
   }
 }
 
-.cooperation__card-adress {
+.cooperation__business-card-adress {
   z-index: 5;
   width: 157px;
   line-height: 20px;
@@ -81,4 +73,14 @@
 
 .cooperation__image {
   width: 100%;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 19px;
+    text-align: left;
+  }
 }

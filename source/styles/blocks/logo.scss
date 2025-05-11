@@ -2,7 +2,8 @@
   width: 100%;
   display: flex;
   align-items: center;
-
+  gap: 56px;
+  cursor: pointer;
 
   &:hover {
     opacity: 0.7;
@@ -53,14 +54,5 @@
 }
 
 .main-logo-footer__text {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   border: none;
-
-
-  @media (min-width: $tablet-width) {
-    position: static;
-    transform: none;
-  }
 }

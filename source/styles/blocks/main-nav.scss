@@ -31,6 +31,13 @@
     gap: 33px;
     justify-content: end;
   }
+
+  @media (min-width: $desktop-width) {
+    width: unset;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: end;
+  }
 }
 
 .main-nav__item {
@@ -44,23 +51,60 @@
   z-index: 3;
   text-transform: uppercase;
 
+  &:hover {
+    background-color: $basic-grey;
+  }
+
+  &:active {
+    background-color: $basic-grey;
+  }
+
   @media (min-width: $tablet-width) {
     width: unset;
     padding: 0;
     border: none;
 
     @include oswald-text(18px, 24px,$basic-black);
+
+    &:hover {
+      background-color: inherit;
+      opacity: 0.7;
+    }
+
+    &:active {
+      background-color: inherit;
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $desktop-width) {
     @include oswald-text(20px, 100%,$basic-white);
     background-color: unset;
+    padding: 10px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page__body-catalog .main-nav__item {
     color: $basic-black;
+  }
+}
+
+.main-nav__item a {
+  height: 100%;
+  width: 100%;
+  padding: 10px 0;
+
+  &:focus {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid $basic-white;
+  }
+}
+
+.page__body-catalog .main-nav__item a {
+  &:focus {
+    border-bottom: 2px solid $basic-green;
   }
 }
 
@@ -73,11 +117,16 @@
   background-image: url("../../images/open-modal.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: inherit;
+  background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.main-nav__toggle:active,
+.main-nav__toggle:focus {
+  background-color: $basic-white;
 }
 
 .main-nav__toggle--open {
@@ -89,6 +138,15 @@
 .main-nav--opened .main-nav__wrapper {
   display: block;
 }
-// .main-nav__item--active{
 
-// }
+@media (min-width: $tablet-width) {
+  .main-nav__item--active {
+    border-bottom: 2px solid $basic-green;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__body-index .main-nav__item--active {
+    border-bottom: 2px solid $basic-white;
+  }
+}
