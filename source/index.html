@@ -9,10 +9,12 @@
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="manifest" href="manifest.webmanifest">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" defer></script>
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body-index">
+  <div></div>
   <header class="main-header" data-test="header">
     <div class="main-logo">
       <a class="main-logo__picture" href="index.html">
@@ -173,7 +175,7 @@
           ">приглашаем <br>к сотрудничеству <br>дилеров!</dt>
           <dd class="cooperation__business-card-adress">ул. Большая Конюшенная, д. 19/8 <span class="cooperation__business-card-town">Санкт-Петербург</span></dd>
         </dl>
-        <iframe class="cooperation__image" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1996.7929883483553!2d30.3172265!3d59.9687573!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1746950488483!5m2!1sru!2sru" title="Карта с местонахождением html-academy" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="cooperation__map" id="map"></div>
       </div>
     </section>
   </main>
