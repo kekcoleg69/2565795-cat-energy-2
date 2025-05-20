@@ -1,0 +1,20 @@
+.button {
+  @include oswald-text(16px, 20px, $basic-white);
+  background-color: $basic-green;
+  color: $basic-white;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(94, 170, 47, 1);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.button--show-all {
+  background-color: $basic-grey;
+  color: rgba(68, 68, 68, 1);
+}

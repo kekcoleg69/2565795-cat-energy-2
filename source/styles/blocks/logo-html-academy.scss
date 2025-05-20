@@ -1,0 +1,35 @@
+.logo-html-academy {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+  &:hover .logo-html-academy__image {
+    background-color: $basic-green;
+  }
+
+  .logo-html-academy__image:focus {
+    background-color: $basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-content: end;
+    gap: 22px;
+  }
+}
+
+.logo-html-academy__text {
+  @include lato-text(16px, 20px);
+}
+
+.logo-html-academy__image {
+  mask-image: url("../../icons/icon-html-academy.svg");
+  width: 27px;
+  height: 34px;
+  background-color: rgba(102, 102, 102, 1);
+}

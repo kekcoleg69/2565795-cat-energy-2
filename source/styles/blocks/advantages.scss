@@ -1,0 +1,132 @@
+.advantages__wrapper {
+  padding: 22px 20px 49px;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 30px 47px;
+    border-bottom: 1px solid rgba(230, 230, 230, 1);
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+    padding: 71px 110px 69px;
+  }
+}
+
+.advantages__header {
+  @include oswald-text(36px, 40px);
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    @include oswald-text(60px, 60px);
+    margin-bottom: 32px;
+  }
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 37px 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 37px 80px;
+  }
+}
+
+.advantages__item {
+  width: 100%;
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  background-position: left;
+  min-height: 60px;
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 0 57px;
+    min-height: none;
+    background-size: 80px 80px;
+    background-position: left top 40px;
+  }
+}
+
+.advantages__item--leaf {
+  position: relative;
+  background-image: url("../../icons/icon-leaf.svg");
+}
+
+.advantages__item--liquid {
+  position: relative;
+  background-image: url("../../icons/icon-liquid.svg");
+}
+
+.advantages__item--appliances {
+  position: relative;
+  background-image: url("../../icons/icon-appliances.svg");
+}
+
+.advantages__item--watch {
+  position: relative;
+  background-image: url("../../icons/icon-watch.svg");
+}
+
+
+.advantages__text {
+  margin-left: 80px;
+  position: relative;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    @include lato-text(16px, 24px);
+    padding-top: 111px;
+    margin-left: 0;
+    max-width: 245px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__item--leaf::before {
+    content: "";
+    position: absolute;
+    width: 112px;
+    height: 224px;
+    top: 45;
+    left: 105;
+    background-image: url("../../icons/number-one.svg");
+  }
+
+  .advantages__item--liquid::before {
+    content: "";
+    position: absolute;
+    width: 112px;
+    height: 235px;
+    top: 37;
+    left: 124;
+    background-image: url("../../icons/number-two.svg");
+  }
+
+  .advantages__item--appliances::before {
+    content: "";
+    position: absolute;
+    width: 112px;
+    height: 235px;
+    top: 37;
+    left: 124;
+    background-image: url("../../icons/number-free.svg");
+  }
+
+  .advantages__item--watch::before {
+    content: "";
+    position: absolute;
+    width: 122px;
+    height: 235px;
+    top: 37;
+    left: 124;
+    background-image: url("../../icons/number-four.svg");
+  }
+}

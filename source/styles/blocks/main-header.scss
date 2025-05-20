@@ -1,0 +1,22 @@
+.main-header {
+  min-height: 65px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+  border-bottom: 1px solid $basic-grey;
+
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 34px 0 30px;
+    flex-wrap: nowrap;
+    column-gap: 92px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 55px 110px 0;
+  }
+}

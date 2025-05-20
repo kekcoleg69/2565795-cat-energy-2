@@ -1,0 +1,82 @@
+.cooperation {
+  width: 100%;
+}
+
+.cooperation__wrapper {
+  width: 100%;
+  position: relative;
+  background-color: $basic-white;
+
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-white;
+  }
+}
+
+.page__body-catalog .cooperation__wrapper {
+  background-color: $basic-grey;
+}
+
+.cooperation__business-card {
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding: 61px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 565px;
+    padding: 60px 80px;
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    z-index: 2;
+    background-color: $basic-white;
+  }
+}
+
+.cooperation__card-invitation {
+  z-index: 5;
+
+  @include oswald-text(16px, 20px, rgba(17,17,17,1));
+  text-transform: uppercase;
+  width: 50%;
+  min-width: 140px;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    @include oswald-text(20px, 26px);
+  }
+}
+
+.cooperation__business-card-adress {
+  z-index: 5;
+  width: 157px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    @include lato-text(16px, 20px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 19px;
+    text-align: left;
+  }
+}
+
+.cooperation__map {
+  position: relative;
+  width: 100%;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}
