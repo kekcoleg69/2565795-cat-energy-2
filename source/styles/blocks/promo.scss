@@ -55,10 +55,12 @@
 .promo__header {
   @include oswald-text(36px, 36px, $basic-white);
   margin-bottom: 25px;
+  max-width: 250px;
 
   @media (min-width: $tablet-width) {
     @include oswald-text(60px, 60px, $basic-black);
     margin-bottom: 40px;
+    max-width: 430px;
   }
 }
 
@@ -66,16 +68,17 @@
   @include oswald-text(14px, 14px, $basic-white);
   text-transform: uppercase;
   margin-bottom: 302px;
+  max-width: 250px;
+
 
   @media (min-width: $tablet-width) {
-    @media (min-width: $tablet-width) {
-      @include oswald-text(20px, 20px, $basic-black);
-      margin-bottom: 50px;
-    }
+    @include oswald-text(20px, 20px, $basic-black);
+    margin-bottom: 50px;
+    max-width: 430px;
+  }
 
-    @media (min-width: $desktop-width) {
-      margin-bottom: 52px;
-    }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
   }
 }
 

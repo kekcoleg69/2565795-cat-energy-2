@@ -74,6 +74,7 @@
     padding: 0 40px;
     border: 1px solid $special-medium-grey;
     list-style: none;
+    flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
@@ -89,6 +90,7 @@
   padding-bottom: 20px;
   flex-wrap: wrap;
   gap: 13px;
+
   border-top: 1px solid $special-light-grey;
 
   &:last-child {
@@ -115,8 +117,12 @@
 .additional-products__title {
   @include oswald-text(16px,16px, $special-black);
   width: 100%;
+  display: block;
   text-transform: uppercase;
-  max-width: 200px;
+  max-width: 150px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
 
   @media (min-width: $tablet-width) {
     @include oswald-text(20px,20px);
@@ -125,13 +131,17 @@
 
   @media (min-width: $desktop-width) {
     @include oswald-text(20px,20px);
-    width: 100%;
+    width: 180px;
+    max-width: 180px;
     align-self: center;
   }
 }
 
 .additional-products__amount {
   max-width: 150px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
 
   @media (min-width: $tablet-width) {
     max-width: 200px;
@@ -140,6 +150,9 @@
 
 .additional-products__price {
   max-width: 60px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
 
   @media (min-width: $desktop-width) {
     margin-right: 41px;

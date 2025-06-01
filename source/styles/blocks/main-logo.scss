@@ -22,37 +22,3 @@
     gap: 14px;
   }
 }
-
-.main-logo-footer {
-  width: 100%;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid rgb(217, 217, 217);
-  padding-bottom: 20px;
-
-
-  &:hover {
-    opacity: 0.7;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
-  @media (min-width: $tablet-width) {
-    align-items: start;
-    justify-content: start;
-    border: none;
-    padding: 0;
-    gap: 13px;
-  }
-
-  @media (min-width: $desktop-width) {
-    gap: 14px;
-  }
-}
-
-.main-logo-footer__text {
-  border: none;
-}

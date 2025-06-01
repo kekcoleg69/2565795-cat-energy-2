@@ -2,11 +2,6 @@
   background-color: $basic-grey;
 }
 
-@media (min-width: $tablet-width) {
-  .main-nav__item--active a {
-    border-bottom: 2px solid $basic-green;
-  }
-}
 
 @media (min-width: $desktop-width) {
   .page__body-index .main-nav__item--active a {

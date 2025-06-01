@@ -18,10 +18,11 @@
 
   @media (min-width: $desktop-width) {
     padding: 55px 110px 0;
+    gap: 0;
   }
 }
 
-.main-header-wrapper {
+.main-header__wrapper {
   @media (min-width: $desktop-width) {
     max-width: 1440px;
     margin: 0 auto;
