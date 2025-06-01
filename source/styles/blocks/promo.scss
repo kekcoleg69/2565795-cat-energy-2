@@ -45,7 +45,9 @@
 
   @media (min-width: $desktop-width) {
     padding: 110px 0 0 80px;
+    margin: 0 auto;
     margin-bottom: 266px;
+    max-width: 1440px;
   }
 }
 
@@ -61,7 +63,7 @@
 }
 
 .promo__text {
-  @include oswald-text(14px, 14px, rgba(255, 255, 255, 1));
+  @include oswald-text(14px, 14px, $basic-white);
   text-transform: uppercase;
   margin-bottom: 302px;
 

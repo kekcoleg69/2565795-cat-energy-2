@@ -57,6 +57,7 @@
     "w3c-html-validator": "1.7.0"
   },
   "dependencies": {
-    "lightningcss": "^1.19.0"
+    "lightningcss": "^1.19.0",
+    "normalize.css": "^8.0.1"
   }
 }

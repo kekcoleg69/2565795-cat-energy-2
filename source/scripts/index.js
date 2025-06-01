@@ -1,8 +1,7 @@
 const toggleBtn = document.querySelector('.main-nav__toggle');
 const navMenu = document.querySelector('.main-nav');
-
+document.documentElement.classList.remove('no-js');
 if (toggleBtn && navMenu) {
-  // Если JS работает — убираем класс, который делает меню открытым
   navMenu.classList.remove('main-nav--opened');
 
   toggleBtn.addEventListener('click', () => {

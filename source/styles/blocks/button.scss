@@ -6,7 +6,7 @@
   cursor: pointer;
 
   &:hover {
-    background-color: rgba(94, 170, 47, 1);
+    background-color: rgb(94, 170, 47);
   }
 
   &:active {
@@ -16,5 +16,9 @@
 
 .button--show-all {
   background-color: $basic-grey;
-  color: rgba(68, 68, 68, 1);
+  color: $special-grey;
+
+  width: 100%;
+  padding: 10px;
+  text-transform: uppercase;
 }

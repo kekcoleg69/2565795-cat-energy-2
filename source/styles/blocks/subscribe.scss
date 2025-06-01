@@ -1,30 +1,75 @@
 .subscribe__wrapper {
+  position: relative;
   padding: 21px 20px 42px;
 
   @include oswald-text(24px, 24px);
 
   @media (min-width: $tablet-width) {
     @include oswald-text(32px, 32px);
-    padding: 0 70px 80px;
+    padding: 0 30px 80px;
   }
 
   @media (min-width: $desktop-width) {
     @include oswald-text(40px, 40px);
-    padding: 0 110px 104px;
+    padding: 0 70px 104px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    border: 1px solid $basic-green;
+    width: 98%;
+    top: 30px;
+
+    @media (min-width: $tablet-width) {
+      top: 14px;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      left: 50%;
+      right: 50%;
+      width: 100vw;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 18px;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      left: 50%;
+      right: 50%;
+      width: 100vw;
+    }
   }
 }
 
+
 .subscribe__title {
   position: relative;
+  background-color: $basic-white;
 
+  @include oswald-text(24px, 24px);
+  width: 192px;
   margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
+    width: 282px;
+    max-width: 282px;
     margin-bottom: 65px;
+    overflow-wrap: break-word;
+    text-align: center;
+
+
+    @include oswald-text(32px, 32px);
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 73px;
+    text-align: center;
+    width: 333px;
+    max-width: 333px;
+
+    @include oswald-text(40px, 40px);
   }
 }
 
@@ -34,10 +79,11 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    padding: 0 40px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 752px;
+    width: 835px;
     margin: 0 auto;
   }
 }
@@ -60,20 +106,20 @@
   text-transform: uppercase;
   width: 100%;
   padding: 13px;
-  border: 1px solid rgba(205, 205, 205, 1);
+  border: 1px solid $special-medium-grey;
   margin-bottom: 15px;
 
   &:hover {
-    outline: 1px solid rgba(205, 205, 205, 1);
+    outline: 1px solid $special-medium-grey;
   }
 
   &:focus {
-    outline: 2px solid rgba(68, 68, 68, 1);
+    outline: 2px solid $special-grey;
     border: none;
   }
 
   &:disabled {
-    outline: 2px solid rgba(255, 130, 130, 1);
+    outline: 2px solid rgb(255, 130, 130);
     border: none;
   }
 

@@ -20,3 +20,10 @@
     padding: 55px 110px 0;
   }
 }
+
+.main-header-wrapper {
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}

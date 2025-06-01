@@ -13,10 +13,6 @@
   }
 }
 
-.page__body-catalog .cooperation__wrapper {
-  background-color: $basic-grey;
-}
-
 .cooperation__business-card {
   padding: 25px 20px;
   display: flex;
@@ -24,7 +20,7 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    padding: 61px 70px;
+    padding: 62px 70px 59px;
   }
 
   @media (min-width: $desktop-width) {
@@ -41,7 +37,7 @@
 .cooperation__card-invitation {
   z-index: 5;
 
-  @include oswald-text(16px, 20px, rgba(17,17,17,1));
+  @include oswald-text(16px, 20px, $special-light-black);
   text-transform: uppercase;
   width: 50%;
   min-width: 140px;

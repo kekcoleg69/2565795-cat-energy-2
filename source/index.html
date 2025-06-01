@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page no-js" lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <title>Cat-energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -14,43 +16,44 @@
 </head>
 
 <body class="page__body-index">
-  <div></div>
-  <header class="main-header" data-test="header">
-    <div class="main-logo">
-      <a class="main-logo__picture" href="index.html">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="images/main-logo-dekstop.svg" width="70" height="59" type="image/svg+xml">
-          <source media="(min-width:768px)" srcset="images/main-logo-tablet.svg" width="60" height="50" type="image/svg+xml">
-          <img src="images/main-logo-mobile.svg" width="33" height="38" alt="Главный логотип страницы">
-        </picture>
-      </a>
-      <a class="main-logo__text" href="index.html">
-        <picture>
-          <source media="(min-width:1200px)" srcset="images/logo-text-dekstop.svg" width="118" height="21" type="image/svg+xml">
-          <source media="(min-width:768px)" srcset="images/logo-text-tablet.svg" width="101" height="18" type="image/svg+xml">
-          <img src="images/logo-text-mobile.svg" width="101" height="18" alt="Текстовый главный логотип">
-        </picture>
-      </a>
-    </div>
-    <nav class="main-nav main-nav--opened">
-      <button class="button main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть навигационное меню</span>
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#">Подбор программы</a>
-          </li>
-        </ul>
+  <div class="main-header-wrapper">
+    <header class="main-header" data-test="header">
+      <div class="main-logo">
+        <a class="main-logo__picture" href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="images/main-logo-dekstop.svg" width="70" height="59" type="image/svg+xml">
+            <source media="(min-width:768px)" srcset="images/main-logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+            <img src="images/main-logo-mobile.svg" width="33" height="38" alt="Главный логотип страницы">
+          </picture>
+        </a>
+        <a class="main-logo__text" href="index.html">
+          <picture>
+            <source media="(min-width:1200px)" srcset="images/logo-text-dekstop.svg" width="118" height="21" type="image/svg+xml">
+            <source media="(min-width:768px)" srcset="images/logo-text-tablet.svg" width="101" height="18" type="image/svg+xml">
+            <img src="images/logo-text-mobile.svg" width="101" height="18" alt="Текстовый главный логотип">
+          </picture>
+        </a>
       </div>
-    </nav>
-  </header>
+      <nav class="main-nav main-nav--opened">
+        <button class="button main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть навигационное меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </div>
   <main class="main-container">
     <section class="promo" data-test="hero">
       <div class="promo__wrapper">
@@ -108,25 +111,26 @@
       </div>
     </section>
     <section class="example" data-test="proof">
-      <div class="example__wrapper">
-        <h2 class="example__header">Живой пример</h2>
-        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="example-stats">
-          <div class="example-stats-inner">
-            <div class="example-stats__item">
-              <p class="example-stats__item-value">5 кг</p>
-              <p class="example-stats__item-description">снижение веса</p>
+      <div class="example-wrapper">
+        <div class="example-text-block">
+          <h2 class="example-text-block__header">Живой пример</h2>
+          <p class="example-text-block__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <div class="example-stats">
+            <div class="example-stats-inner">
+              <div class="example-stats__item">
+                <p class="example-stats__item-value">5 кг</p>
+                <p class="example-stats__item-description">снижение веса</p>
+              </div>
+              <div class="example-stats__item">
+                <p class="example-stats__item-value">60 дней</p>
+                <p class="example-stats__item-description">затрачено времени</p>
+              </div>
             </div>
-            <div class="example-stats__item">
-              <p class="example-stats__item-value">60 дней</p>
-              <p class="example-stats__item-description">затрачено времени</p>
+            <div class="example-cost">
+              <p class="example-cost__text">Затраты на питание:</p>
+              <p class="example-cost__sum">15 000 РУБ.</p>
             </div>
           </div>
-          <div class="example-cost">
-            <p class="example-cost__text">Затраты на питание:</p>
-            <p class="example-cost__sum">15 000 РУБ.</p>
-          </div>
-
         </div>
         <div class="example__slider">
           <div class="example__slider-item example__slider-item--before">
@@ -180,37 +184,39 @@
     </section>
   </main>
   <footer class="main-footer" data-test="footer">
-    <div class="main-logo-footer">
-      <a class="main-logo-footer__text" href="index.html">
-        <picture>
-          <img src="images/logo-text-mobile.svg" width="128" height="24" alt="Текстовый главный логотип">
-        </picture>
-      </a>
-    </div>
-    <div class="social-media">
-      <ul class="social-media__list">
-        <li class="social-media__item">
-          <a class="social-media__item-link social-media__item-link--vk" href="#">
-            <span class="visually-hidden">ссылка на vkontakte</span>
-          </a>
-        </li>
-        <li class="social-media__item">
-          <a class="social-media__item-link social-media__item-link--youtube" href="#">
-            <span class="visually-hidden">ссылка на youtube</span>
-          </a>
-        </li>
-        <li class="social-media__item">
-          <a class="social-media__item-link social-media__item-link--telegram" href="#">
-            <span class="visually-hidden">ссылка на telegram</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="logo-html-academy">
-      <a class="logo-html-academy__text" href="http://html-academy.ru">HTML Academy</a>
-      <a class=" logo-html-academy__image" href="http://html-academy.ru">
-        <span class="visually-hidden">Ссылка на html-academy</span>
-      </a>
+    <div class="main-footer-conteiner">
+      <div class="main-logo-footer">
+        <a class="main-logo-footer__text" href="index.html">
+          <picture>
+            <img src="images/logo-text-mobile.svg" width="128" height="24" alt="Текстовый главный логотип">
+          </picture>
+        </a>
+      </div>
+      <div class="social-media">
+        <ul class="social-media__list">
+          <li class="social-media__item">
+            <a class="social-media__item-link social-media__item-link--vk" href="#">
+              <span class="visually-hidden">ссылка на vkontakte</span>
+            </a>
+          </li>
+          <li class="social-media__item">
+            <a class="social-media__item-link social-media__item-link--youtube" href="#">
+              <span class="visually-hidden">ссылка на youtube</span>
+            </a>
+          </li>
+          <li class="social-media__item">
+            <a class="social-media__item-link social-media__item-link--telegram" href="#">
+              <span class="visually-hidden">ссылка на telegram</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="logo-html-academy">
+        <a class="logo-html-academy__text" href="http://html-academy.ru">HTML Academy</a>
+        <a class=" logo-html-academy__image" href="http://html-academy.ru">
+          <span class="visually-hidden">Ссылка на html-academy</span>
+        </a>
+      </div>
     </div>
   </footer>
 </body>

@@ -5,50 +5,55 @@
   <meta charset="UTF-8">
   <title>Cat-energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="manifest" href="manifest.webmanifest">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" defer></script>
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body-catalog">
-  <header class="main-header" data-test="header">
-    <div class="main-logo">
-      <a class="main-logo__picture" href="index.html">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="images/main-logo-dekstop.svg" width="70" height="59" type="image/svg+xml">
-          <source media="(min-width:768px)" srcset="images/main-logo-tablet.svg" width="60" height="50" type="image/svg+xml">
-          <img src="images/main-logo-mobile.svg" width="33" height="38" alt="Главный логотип страницы">
-        </picture>
-      </a>
-      <a class="main-logo__text" href="index.html">
-        <picture>
-          <source media="(min-width:1200px)" srcset="images/logo-text-dekstop.svg" width="118" height="21" type="image/svg+xml">
-          <source media="(min-width:768px)" srcset="images/logo-text-tablet.svg" width="101" height="18" type="image/svg+xml">
-          <img src="images/logo-text-mobile.svg" width="101" height="18" alt="Текстовый главный логотип">
-        </picture>
-      </a>
-    </div>
-    <nav class="main-nav ">
-      <button class="button main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть навигационное меню</span>
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item ">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item main-nav__item--active">
-            <a href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#">Подбор программы</a>
-          </li>
-        </ul>
+  <div class="main-header-wrapper">
+    <header class="main-header" data-test="header">
+      <div class="main-logo">
+        <a class="main-logo__picture" href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="images/main-logo-dekstop.svg" width="70" height="59" type="image/svg+xml">
+            <source media="(min-width:768px)" srcset="images/main-logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+            <img src="images/main-logo-mobile.svg" width="33" height="38" alt="Главный логотип страницы">
+          </picture>
+        </a>
+        <a class="main-logo__text" href="index.html">
+          <picture>
+            <source media="(min-width:1200px)" srcset="images/logo-text-dekstop.svg" width="118" height="21" type="image/svg+xml">
+            <source media="(min-width:768px)" srcset="images/logo-text-tablet.svg" width="101" height="18" type="image/svg+xml">
+            <img src="images/logo-text-mobile.svg" width="101" height="18" alt="Текстовый главный логотип">
+          </picture>
+        </a>
       </div>
-    </nav>
-  </header>
+      <nav class="main-nav ">
+        <button class="button main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть навигационное меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item ">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item main-nav__item--active">
+              <a href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </div>
   <main class="main-container">
     <h1 class="visually-hidden">Продукция фирмы cat-energy</h1>
     <section class="product-catalog" data-test="catalog">
@@ -293,10 +298,7 @@
       </div>
       <aside class="subscribe">
         <div class="subscribe__wrapper">
-          <h2 class="subscribe__title">Акции и новинки
-            <span class="stretch-line-right stretch-line-right--subscribe"></span>
-            <span class="stretch-line-left stretch-line-left--subscribe"></span>
-          </h2>
+          <h2 class="subscribe__title">Акции и новинки</h2>
           <form class="subscribe__form" action="#" method="post">
             <label class="subscribe__text" for="subscribe-form-input">Подпишитесь на наши новости и не пропустите ни одного предложения!</label>
             <input class="subscribe-form-input" type="email" name="email" id="subscribe-form-input" placeholder="кuklachev@gmail.com">
@@ -313,42 +315,44 @@
           ">приглашаем <br>к сотрудничеству <br>дилеров!</dt>
           <dd class="cooperation__business-card-adress">ул. Большая Конюшенная, д. 19/8 <span class="cooperation__business-card-town">Санкт-Петербург</span></dd>
         </dl>
-        <iframe class="cooperation__image" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1996.7929883483553!2d30.3172265!3d59.9687573!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1746950488483!5m2!1sru!2sru" title="Карта с местонахождением html-academy" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="cooperation__map" id="map"></div>
       </div>
     </section>
   </main>
   <footer class="main-footer" data-test="footer">
-    <div class="main-logo-footer">
-      <a class="main-logo-footer__text" href="index.html">
-        <picture>
-          <img src="images/logo-text-mobile.svg" width="128" height="24" alt="Текстовый главный логотип">
-        </picture>
-      </a>
-    </div>
-    <div class="social-media">
-      <ul class="social-media__list">
-        <li class="social-media__item">
-          <a class="social-media__item-link social-media__item-link--vk" href="#">
-            <span class="visually-hidden">ссылка на vkontakte</span>
-          </a>
-        </li>
-        <li class="social-media__item">
-          <a class="social-media__item-link social-media__item-link--youtube" href="#">
-            <span class="visually-hidden">ссылка на youtube</span>
-          </a>
-        </li>
-        <li class="social-media__item">
-          <a class="social-media__item-link social-media__item-link--telegram" href="#">
-            <span class="visually-hidden">ссылка на telegram</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="logo-html-academy">
-      <a class="logo-html-academy__text" href="http://html-academy.ru">HTML Academy</a>
-      <a class=" logo-html-academy__image" href="http://html-academy.ru">
-        <span class="visually-hidden">Ссылка на html-academy</span>
-      </a>
+    <div class="main-footer-conteiner">
+      <div class="main-logo-footer">
+        <a class="main-logo-footer__text" href="index.html">
+          <picture>
+            <img src="images/logo-text-mobile.svg" width="128" height="24" alt="Текстовый главный логотип">
+          </picture>
+        </a>
+      </div>
+      <div class="social-media">
+        <ul class="social-media__list">
+          <li class="social-media__item">
+            <a class="social-media__item-link social-media__item-link--vk" href="#">
+              <span class="visually-hidden">ссылка на vkontakte</span>
+            </a>
+          </li>
+          <li class="social-media__item">
+            <a class="social-media__item-link social-media__item-link--youtube" href="#">
+              <span class="visually-hidden">ссылка на youtube</span>
+            </a>
+          </li>
+          <li class="social-media__item">
+            <a class="social-media__item-link social-media__item-link--telegram" href="#">
+              <span class="visually-hidden">ссылка на telegram</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="logo-html-academy">
+        <a class="logo-html-academy__text" href="http://html-academy.ru">HTML Academy</a>
+        <a class=" logo-html-academy__image" href="http://html-academy.ru">
+          <span class="visually-hidden">Ссылка на html-academy</span>
+        </a>
+      </div>
     </div>
   </footer>
 </body>
