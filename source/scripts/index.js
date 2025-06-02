@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const myPlacemark = new ymaps.Placemark(myMap.getCenter(), {}, {
       iconLayout: 'default#image',
-      iconImageHref: '../images/cooperation-map-pin@2x.png',
+      iconImageHref: '/images/cooperation-map-pin@2x.png',
       iconImageSize: iconSize,
       iconImageOffset: iconOffset
     });
