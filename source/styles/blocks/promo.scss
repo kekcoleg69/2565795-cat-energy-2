@@ -27,6 +27,10 @@
       position: absolute;
       right: 0;
       top: 0;
+
+      @media (min-resolution: 2dppx) {
+        background: linear-gradient(0deg, rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%), url("../../images/promo-cat-bg-desktop@2x.webp");
+      }
     }
   }
 }
@@ -56,10 +60,11 @@
   @include oswald-text(36px, 36px, $basic-white);
   margin-bottom: 25px;
   max-width: 250px;
+  margin: 0 auto 25px;
 
   @media (min-width: $tablet-width) {
     @include oswald-text(60px, 60px, $basic-black);
-    margin-bottom: 40px;
+    margin: 0 0 40px;
     max-width: 430px;
   }
 }
@@ -67,14 +72,14 @@
 .promo__text {
   @include oswald-text(14px, 14px, $basic-white);
   text-transform: uppercase;
-  margin-bottom: 302px;
+  margin: 0 auto 302px;
   max-width: 250px;
 
 
   @media (min-width: $tablet-width) {
     @include oswald-text(20px, 20px, $basic-black);
-    margin-bottom: 50px;
     max-width: 430px;
+    margin: 0 0 50px;
   }
 
   @media (min-width: $desktop-width) {

@@ -55,6 +55,7 @@
 
   @media (min-width: $tablet-width) {
     width: 381px;
+    text-align: center;
 
     @include oswald-text(32px,32px);
     margin-bottom: 80px;
@@ -127,6 +128,7 @@
   @media (min-width: $tablet-width) {
     @include oswald-text(20px,20px);
     width: 50%;
+    max-width: 200px;
   }
 
   @media (min-width: $desktop-width) {
@@ -204,13 +206,17 @@
 
 .additional-products__promotion {
   position: relative;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/additional-cat-bg@2x.png");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/additional-cat-bg@1x.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
   min-height: 290px;
   margin-top: 33px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/additional-cat-bg@2x.png");
+  }
 
   @media (min-width: $tablet-width) {
     margin-top: 74px;

@@ -50,11 +50,12 @@
 
 .cooperation__business-card-adress {
   z-index: 5;
-  width: 157px;
+  width: 138px;
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
     @include lato-text(16px, 20px);
+    width: 170px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -74,6 +75,33 @@
 
   @media (min-width: $tablet-width) {
     height: 400px;
+  }
+
+  .no-js & {
+    background-image: url("../../images/location-mobile@1x.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/location-mobile@2x.webp");
+    }
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../images/location-tablet@1x.webp");
+    }
+
+    @media (min-width: $tablet-width) and (min-resolution: 2dppx) {
+      background-image: url("../../images/location-tablet@2x.webp");
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../../images/location-desktop@1x.webp");
+    }
+
+    @media (min-width: $desktop-width) and (min-resolution: 2dppx) {
+      background-image: url("../../images/location-desktop@2x.webp");
+    }
   }
 }
 
